@@ -48,7 +48,7 @@ python inference_iqa_dataset.py --dataset live  --dataset_path /path/to/dataset/
 
 **Arguments**:
 
-* `--dataset`: dataset name[live,csiq,tid2013,kadid10k,livec,koniq10k,flive,spaq]
+* `--dataset`: dataset name ['live','csiq','tid2013','kadid10k','livec','koniq10k','flive','spaq']
 * `--dataset_path`: Path to the root folder of benchmark dataset
 * `--model`: Model backbone (`HiRQA` or `HiRQA-S`)
 * `--ckpt`: Path to HiRQA or HiRQA-S `.pth` model
