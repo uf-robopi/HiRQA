@@ -18,8 +18,10 @@ This repository provides the official implementation of **HiRQA**, an opinion-un
 ```bash
 git clone https://github.com/uf-robopi/HiRQA.git
 cd HiRQA
+
 conda create -n hirqa python=3.10 -y
 conda activate hirqa
+
 conda install pytorch torchvision cudatoolkit=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
@@ -52,6 +54,11 @@ python inference_iqa_dataset.py --dataset live  --dataset_path /path/to/dataset/
 * `--dataset_path`: Path to the root folder of benchmark dataset
 * `--model`: Model backbone (`HiRQA` or `HiRQA-S`)
 * `--ckpt`: Path to HiRQA or HiRQA-S `.pth` model
+
+To run HiRQA on single image.
+```bash
+python single_image_inference.py --img_path /path/to/image  --model HiRQA --ckpt /path/to/HiRQA.pth
+```
 
 ---
 
