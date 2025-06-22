@@ -80,7 +80,7 @@ if __name__ == "__main__":
         dataset_loader = folders.SPAQ_loader(dataset_root)
     else:
         print(f"Dataset {dataset} not recognized.")
-
+        exit()
     index = list(range(len(dataset_loader.ref_img_names)))
     dataset = IQADataset(dataset_loader, index, resize=resize, aspect_ratio_size=aspect_ratio_size)
 
