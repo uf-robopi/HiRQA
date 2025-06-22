@@ -8,6 +8,7 @@ from model.HiRQA import HiRQA
 from dataset import folders 
 from dataset.iqa_dataset import IQADataset
 import argparse
+import time
 
 def safe_correlation(predictions, targets):
     if np.allclose(predictions, predictions[0]) or np.allclose(targets, targets[0]):
@@ -23,7 +24,6 @@ def evaluate(model, val_loader, device):
     model.eval()
     predictions = []
     targets = []
-
     with torch.no_grad(), torch.cuda.amp.autocast():
         for images, scores in tqdm(val_loader):
             images = images.to(device)
@@ -36,7 +36,6 @@ def evaluate(model, val_loader, device):
         
     predictions = np.array(predictions).squeeze()
     targets = np.array(targets)
-
     plcc = safe_correlation(predictions, targets)
     srcc = safe_spearman(predictions, targets)
     
@@ -63,13 +62,13 @@ if __name__ == "__main__":
 
     if dataset == 'csiq':
         dataset_loader = folders.CSIQ_loader(dataset_root)
-    elif dataset == 'kadid_10k':
+    elif dataset == 'kadid10k':
         dataset_loader = folders.KADID10k_loader(dataset_root)
-    elif dataset == 'koniq':
+    elif dataset == 'koniq10k':
         dataset_loader = folders.KONIQ_loader(dataset_root)
     elif dataset == 'live':
         dataset_loader = folders.LIVE_loader(dataset_root)
-    elif dataset == 'tid_2013':
+    elif dataset == 'tid2013':
         dataset_loader = folders.TID_loader(dataset_root)
     elif dataset == 'livec':
         dataset_loader = folders.LIVECHALLENGE_loader(dataset_root)
@@ -85,16 +84,8 @@ if __name__ == "__main__":
     index = list(range(len(dataset_loader.ref_img_names)))
     dataset = IQADataset(dataset_loader, index, resize=resize, aspect_ratio_size=aspect_ratio_size)
 
-    loader = DataLoader(dataset, batch_size=1, shuffle=False, num_workers = 4)
+    loader = DataLoader(dataset, batch_size=1, shuffle=False)
     
     # evaluation
     plcc, srcc = evaluate(model, loader, device)
     print(f" |  SRCC: {srcc:.3f} |  PLCC: {plcc:.3f}")
-
-
-
-
-
-
-    
-
