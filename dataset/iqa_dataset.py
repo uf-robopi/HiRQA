@@ -33,9 +33,9 @@ class IQADataset(Dataset):
 
         if self.aspect_ratio_size:
             width, height = image.size
-            if min(width, height) > 512:
+            if min(width, height) > self.aspect_ratio_size:
                 # Resize the shortest side to `min_size` while keeping the aspect ratio.
-                scale = 512 / min(width, height)
+                scale = self.aspect_ratio_size / min(width, height)
                 new_width = int(round(width * scale))
                 new_height = int(round(height * scale))
                 image = image.resize((new_width, new_height), Image.BICUBIC)
