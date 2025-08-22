@@ -4,7 +4,7 @@ This repository provides the official implementation of **HiRQA**, an opinion-un
 
 **Paper**:
 
-> [**HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment**]()
+> [**HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment**](https://arxiv.org/abs/2508.15130)
 > Vaishnav Ramesh, Haining Wang, Md Jahidul Islam
 
 <p align="center">
@@ -65,7 +65,15 @@ python single_image_inference.py --img_path /path/to/image  --model HiRQA --ckpt
 ## Citation
 
 ```bibtex
-
+@misc{ramesh2025hirqahierarchicalrankingquality,
+      title={HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment}, 
+      author={Vaishnav Ramesh and Haining Wang and Md Jahidul Islam},
+      year={2025},
+      eprint={2508.15130},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.15130}, 
+}
 ```
 
 ---
