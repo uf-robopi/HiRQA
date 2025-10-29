@@ -35,7 +35,7 @@ We provide pretrained weights for:
 * HiRQA (ResNet50))
 * HiRQA-S (ResNet18)
 
-You can download weights from [Dropbox](https://www.dropbox.com/scl/fo/noe9hjltjjq5xjm5mygjp/AJZ9ugEAf68z2aSAk9sfFvQ?rlkey=iaozkxvscihuvl9i71knghcly&st=knuxx4ot&dl=0).
+You can download weights from [Dropbox](https://www.dropbox.com/scl/fo/noe9hjltjjq5xjm5mygjp/AJZ9ugEAf68z2aSAk9sfFvQ?rlkey=inyo32n1r16g00df56y0gtoz7&st=sf8sltip&dl=0).
 Use the `--ckpt` argument during inference.
 
 ---
