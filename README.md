@@ -5,7 +5,8 @@ This repository provides the official implementation of **HiRQA**, an opinion-un
 **Paper**:
 
 > [**HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment**](https://arxiv.org/abs/2508.15130)
-> Vaishnav Ramesh, Haining Wang, Md Jahidul Islam
+> Vaishnav Ramesh, Haining Wang, Md Jahidul Islam 
+> *Accepted at Machine Vision and Applications (2026)*
 
 <p align="center">
   <img src="data/hirqa_pipeline.png" width="100%" alt="HiRQA Inference Pipeline">
