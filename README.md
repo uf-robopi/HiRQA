@@ -69,10 +69,9 @@ python single_image_inference.py --img_path /path/to/image  --model HiRQA --ckpt
 @misc{ramesh2025hirqahierarchicalrankingquality,
       title={HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment}, 
       author={Vaishnav Ramesh and Haining Wang and Md Jahidul Islam},
-      year={2025},
-      eprint={2508.15130},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
+      journal={Machine Vision and Applications},
+      year={2026},
+      note={Accepted May 2026},
       url={https://arxiv.org/abs/2508.15130}, 
 }
 ```
