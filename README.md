@@ -4,9 +4,10 @@ This repository provides the official implementation of **HiRQA**, an opinion-un
 
 **Paper**:
 
-> [**HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment**](https://arxiv.org/abs/2508.15130) <br>
+> **HiRQA: Hierarchical Ranking and Quality Alignment for Opinion-Unaware Image Quality Assessment** <br>
 > Vaishnav Ramesh, Haining Wang, Md Jahidul Islam <br>
-> *Accepted at Machine Vision and Applications (2026)* 
+> *Accepted at Machine Vision and Applications (2026)* <br>
+> **Links**: [Offical Publication](https://link.springer.com/article/10.1007/s00138-026-01845-6) | [Preprint](https://arxiv.org/abs/2508.15130)
 
 <p align="center">
   <img src="data/hirqa_pipeline.png" width="100%" alt="HiRQA Inference Pipeline">
@@ -71,9 +72,12 @@ python single_image_inference.py --img_path /path/to/image  --model HiRQA --ckpt
       author={Vaishnav Ramesh and Haining Wang and Md Jahidul Islam},
       journal={Machine Vision and Applications},
       year={2026},
-      note={Accepted May 2026},
-      url={https://arxiv.org/abs/2508.15130}, 
-}
+      volume = {37},
+      number = {5},
+      pages = {110},
+      doi = {10.1007/s00138-026-01845-6},
+      url = {https://doi.org/10.1007/s00138-026-01845-6}, 
+     }
 ```
 
 ---
